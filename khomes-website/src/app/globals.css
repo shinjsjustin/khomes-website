@@ -29,13 +29,13 @@ body {
   background-attachment: fixed;
   background-position: center;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .content {
   width: 100%;
-  max-width: 960px;  /* Adjust the width as necessary */
+  max-width: 120vh;  /* Adjust the width as necessary */
   margin: 0 auto;
   z-index: 10;
   position: relative;

@@ -6,14 +6,14 @@ export default function Page(){
     </div>
 
     {/* Information Section */}
-    <div className="section">
+    <div className="section bg-black bg-opacity-70">
       <h2 className="text-4xl font-bold text-white">Information</h2>
     </div>
 
     {/* Additional Paragraph Sections */}
-    <div className="section">
+    <div className="section bg-black bg-opacity-70">
       <p className="text-xl text-white">
-        Here's some detailed paragraph about the site or other info.
+        Contact us!
       </p>
     </div>
 
