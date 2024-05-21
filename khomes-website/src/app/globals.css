@@ -56,3 +56,50 @@ body {
     text-wrap: balance;
   }
 }
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 50px;
+  width: calc(100% - 100px); /* Adjust width to account for padding */
+  height: calc(100% - 100px); /* Adjust height to account for padding */
+  position: relative; /* Ensures absolute positioning is relative to the grid */
+  box-sizing: border-box;
+}
+
+.photo {
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, z-index 0.3s ease;
+}
+
+.filebox {
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #007bff;
+}
