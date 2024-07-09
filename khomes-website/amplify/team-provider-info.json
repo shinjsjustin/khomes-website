@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-khomeswebsite-dev-9e2d0-authRole",
+      "UnauthRoleArn": "arn:aws:iam::637423343913:role/amplify-khomeswebsite-dev-9e2d0-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::637423343913:role/amplify-khomeswebsite-dev-9e2d0-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-khomeswebsite-dev-9e2d0-deployment",
+      "UnauthRoleName": "amplify-khomeswebsite-dev-9e2d0-unauthRole",
+      "StackName": "amplify-khomeswebsite-dev-9e2d0",
+      "StackId": "arn:aws:cloudformation:us-east-2:637423343913:stack/amplify-khomeswebsite-dev-9e2d0/6eb43c80-3d92-11ef-9ae2-02aca98fc607",
+      "AmplifyAppId": "d2kqwlsjuxyh22"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2kqwlsjuxyh22",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
