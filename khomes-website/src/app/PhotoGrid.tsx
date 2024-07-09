@@ -1,11 +1,10 @@
 'use client'
 
-import {useState, useEffect} from 'react';
+import Image from 'next/image'
 import {Photo} from './types'
 interface PhotoGridProps{
   photos: Photo[];
 }
-
 
 const PhotoGrid: React.FC<PhotoGridProps> = ({photos}) => {
   const windowWidth = 900;
@@ -20,13 +19,17 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({photos}) => {
       {photos.map((photo) => (
         <div
           key={photo.id}
-          className= "photo"
-          style={{ 
-            backgroundImage: `url(${photo.src})`,
+          className="photo"
+          style={{
             width: `${photoSize}px`,
             height: `${photoSize}px`,
-          }}
-        />
+          }}>
+          <Image
+            src={photo.src}
+            alt={`Photo ${photo.id}`}
+            fill
+          />
+        </div>
       ))}
     </div>
   );
