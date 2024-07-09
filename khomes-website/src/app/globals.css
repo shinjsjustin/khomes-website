@@ -24,7 +24,7 @@ html, body {
 }
 
 body {
-  background-image: url('/images/realestate_outside01.jpg');
+  background-image: url('/images/santa_clara_landscape.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -57,14 +57,14 @@ body {
   }
 }
 
-.photo-grid {
+/* .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 50px;
-  width: calc(100% - 100px); /* Adjust width to account for padding */
-  height: calc(100% - 100px); /* Adjust height to account for padding */
-  position: relative; /* Ensures absolute positioning is relative to the grid */
+  width: calc(100% - 100px); 
+  height: calc(100% - 100px); 
+  position: relative; 
   box-sizing: border-box;
 }
 
@@ -74,6 +74,27 @@ body {
   aspect-ratio: 1;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, z-index 0.3s ease;
+} */
+
+.photo-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: calc(100% - 100px); 
+  height: calc(100% - 100px); 
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.photo{
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+  justify-content: center;
+}
+
+.photo:hover{
+  transform: scale(2.00)
 }
 
 .filebox {
