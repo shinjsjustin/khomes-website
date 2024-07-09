@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import PhotoGrid from './PhotoGrid';
 import { Photo } from './types';
 
@@ -17,8 +18,8 @@ const entrancePhotos: Photo[] = [
 const bedroomPhotos: Photo[] = [
   {id: 12, src: '/images/room1_01.jpg'},
   {id: 13, src: '/images/room1_02.jpg'},
-  {id: 14, src: '/images/room2_01.jpg'},
-  {id: 15, src: '/images/room2_02.jpg'},
+  {id: 14, src: '/images/room1_03.jpg'},
+  {id: 15, src: '/images/room2_01.jpg'},
 ]
 
 const masterPhotos: Photo[] = [
@@ -36,15 +37,13 @@ export default function Page(){
 
     <div className="section bg-black bg-opacity-70">
       <h2 className="text-6xl font-bold text-white">Share My Home in Santa Clara</h2>
-      <div className= "welcome" style={{
-          backgroundImage: `url(${'/images/front_yard.jpg'})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          marginTop: '24px',
-          width: '900px',
-          height: '600px',
-        }}
-      />
+      <div className= "welcome">
+        <Image
+          src = {'/images/front_yard.jpg'}
+          alt = 'Photo 1'
+          fill
+        />
+      </div>
     </div>
     <div className="section bg-black bg-opacity-70">
       <h2 className="text-6xl font-bold text-white">Entrance</h2>
